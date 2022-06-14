@@ -20,11 +20,11 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 #display fruit table
 #streamlit.dataframe(my_fruit_list)
 
-#streamlit.header('fruityvice Fruit Advice!')
+streamlit.header('fruityvice Fruit Advice!')
 #fruit_choice = streamlit.text_input('What fruit would oyou like information about?','Kiwi')
 #streamlit.write('The user entered',fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+streamlit.text(fruityvice_response.json())
 
 
 
