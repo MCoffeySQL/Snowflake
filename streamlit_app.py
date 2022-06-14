@@ -24,7 +24,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit') #change pick list value to frui
 #streamlit.dataframe(my_fruit_list)
 
 #create the repeatable code block 
-def get fruityvice_data(this_fruit_choice):
+def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     return fruityvice_normalized
