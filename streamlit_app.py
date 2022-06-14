@@ -21,9 +21,9 @@ my_fruit_list = my_fruit_list.set_index('Fruit') #change pick list value to frui
 #streamlit.dataframe(my_fruit_list)
 
 streamlit.header('fruityvice Fruit Advice!')
-#fruit_choice = streamlit.text_input('What fruit would oyou like information about?','Kiwi')
-#streamlit.write('The user entered',fruit_choice)
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered',fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json()) #writes data to the screen
 
 
