@@ -18,7 +18,7 @@ fruits_selected = streamlit.multiselect("Pick Some Fruits:",list(my_fruit_list.i
 fruits_to_show = my_fruit_list.loc[fruits_selected]     #https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html 
 
 #display fruit table
-streamlit.dataframe(my_fruit_list)
+#streamlit.dataframe(my_fruit_list)
 
 streamlit.header('fruityvice Fruit Advice!')
 #fruit_choice = streamlit.text_input('What fruit would oyou like information about?','Kiwi')
